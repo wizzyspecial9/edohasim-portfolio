@@ -118,6 +118,20 @@
             Passionate about software engineering, web development,
             programming, and solving real-world problems with technology.
         </p>
+        <table class="education-table">
+    <tr>
+        <th>Qualification</th>
+        <th>Institution</th>
+        <th>Status</th>
+    </tr>
+
+    <tr>
+        <td>B.Sc. Computer Science</td>
+        <td>Miva Open University</td>
+        <td>In Progress</td>
+    </tr>
+</table>
+
    </div>
 
 </section>
@@ -176,20 +190,28 @@
 
     <div class="projects-container">
 
-        <div class="project-box">
-          
+<div class="project-box">
+
+
     <img src="images/portfolio.png" alt="Portfolio Website">
 
     <h3>Portfolio Website</h3>
 
     <p>
-        A responsive personal portfolio built with HTML, CSS and JavaScript.
+        A responsive personal portfolio built with HTML, CSS andJavaScript.
     </p>
 
-    <a href="#" class="btn">View Project</a>
+    <div class="project-links">
+
+        <a href="#" class="btn">View Project</a>
+
+        <a href="https://wizzyspecial9.github.io/edohasim-portfolio/" target="_blank" class="btn">Live Demo</a>
+
+        <a href="https://github.com/wizzyspecial9/edohasim-portfolio" target="_blank" class="btn">GitHub</a>
+
+    </div>
 
 </div>
-        </div>
 
 <div class="project-box">
       <img src="images/planner.png" alt="Academic Planner">
@@ -198,59 +220,81 @@
       <p>A task management web app built with HTML, CSS and JavaScript. It allows users to add, complete, and delete academic tasks.
 
       </p>
-      <div class="project-links">
-
+ <div class="project-links">
+    <a href="#planner" class="btn">View Project</a>
     <a href="#planner" class="btn">Live Demo</a>
-
     <a href="#" class="btn">GitHub</a>
-
-</div>
-
-<a href="#planner" class="btn">View Project</a>
+ </div>
         </div>
-
         <div class="project-box">
-            <img src="images/future-app.png" alt="Future App">
-            <h3>Future App</h3>
-            <p>A software project that will showcase my programming skills.</p>
-            <a href="#" class="btn">Preview</a>
-        </div>
-        </div>
+
+    <img src="images/calculator.png" alt="Calculator App">
+
+    <h3>Calculator App</h3>
+
+    <p>
+        A simple calculator application built with HTML, CSS and JavaScript.
+        It performs basic mathematical operations with a clean user interface.
+    </p>
+
+    <div class="project-links">
+
+        <a href="calculator/calculator.html" class="btn">View Project</a>
+
+        <a href="calculator/calculator.html" target="_blank" class="btn">Live Demo</a>
+
+        <a href="https//github.com/wizzyspecial9/edohasim-portfolio" target="_blank" class="btn">GitHub</a>
+
+    </div>
+
+       </div>
+       </div>
        </section>
+       <section class="multimedia" id="multimedia">
+
+    <h2 class="heading">My <span>Introduction Video</span></h2>
+
+    <div class="multimedia-container">
+
+        <video controls width="100%">
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+</section>
+
        <section class="planner" id="planner">
 
-    <h2 class="heading">Academic <span>Planner</span></h2>
+       <h2 class="heading">Academic <span>Planner</span></h2>
 
-    <div class="planner-container">
+       <div class="planner-container">
 
         <input type="text" id="task-input" placeholder="Enter a new task">
 
         <button id="add-task" class="btn">Add Task</button>
 
         <ul id="task-list"></ul>
-
     </div>
 
 </section>
+<section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <div class="contact-container">
+            <form id="contact-form">
 
-       <section class="contact" id="contact">
+            <input type="text" id="name" placeholder="Your Name">
 
-    <h2 class="heading">Contact <span>Me</span></h2>
+            <input type="email" id="email" placeholder="Your Email">
 
-    <div class="contact-container">
+            <input type="text" id="phone" placeholder="Phone Number">
 
-        <p>
-           Email: 
-           <a href="mailto:edohasimw@gmail.com" class="btn">
-            Email Me</a>
-        </p>   
+            <textarea id="message" placeholder="Your Message"></textarea>
 
-        <p>
-            WhatsApp:
-            <a href="https://wa.me/2347047987126" target="_blank" class="btn">
-                  Chat With Us
-            </a>
-        </p>
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
 
         <div class="social">
             <a href="#"><i class='bx bxl-instagram'></i></a>

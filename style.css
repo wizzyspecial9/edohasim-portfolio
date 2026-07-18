@@ -1,5 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+
+}
 html{
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 *{
     margin:0;
@@ -446,21 +456,20 @@ body{
 }
 
 @media (max-width: 768px) {
-.project-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
+.project-links{
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
 }
 
-.project-links .btn {
-    padding: 12px 18px;
-    min-width: 120px;
-    text-align: center;
+.project-links .btn{
+      width: auto;
+      min-width: 120px;
 }
 
     #menu-icon{
-        display: block;
+      display: block;
     }
 
     .navbar{
@@ -847,13 +856,97 @@ body{
     opacity: 0.5;
 }
 
-.project-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-    flex-wrap: wrap;
+.project-links{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:20px;
+    flex-wrap:wrap;
 }
 
-.project-links .btn {
-    padding: 10px 20px;
+.project-links .btn{
+    padding:10px 18px;
+    font-size:14px;
+}
+
+/* Contact Form */
+
+#contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:600px;
+    margin:20px auto;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    border:2px solid #00abf0;
+    outline:none;
+    background:#081b29;
+    color:white;
+    font-size:16px;
+}
+
+#contact-form textarea{
+    height:150px;
+    resize:none;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder{
+    color:#ccc;
+}
+
+#contact-form .btn{
+    cursor:pointer;
+    border:none;
+    width:200px;
+    margin:auto;
+}
+
+.education-table{
+    width:100%;
+    margin-top:25px;
+    border-collapse:collapse;
+}
+
+.education-table th,
+.education-table td{
+    border:2px solid #00abf0;
+    padding:12px;
+    text-align:center;
+}
+
+.education-table th{
+    background:#00abf0;
+    color:#081b29;
+}
+
+.education-table td{
+    background:#112e42;
+    color:#fff;
+}
+
+.multimedia{
+    padding:80px 10%;
+    background:#112e42;
+}
+
+.multimedia-container{
+    max-width:200px;
+    margin:auto;
+    border:2px solid #00abf0;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 28px #00abf0;
+}
+
+.multimedia video{
+    width:100%;
+    max-height: 350px;
+    object-fit: cover;
 }
